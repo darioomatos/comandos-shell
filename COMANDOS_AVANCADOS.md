@@ -1,4 +1,3 @@
-
 # 🧠 Comandos Avançados no Linux
 
 > Lista viva e evolutiva de comandos úteis, com aplicação prática em **cibersegurança**, **administração de sistemas**, **redes** e **forense digital**.
@@ -14,8 +13,11 @@ stat -c %w /
 🔹 Mostra a data de criação do sistema de arquivos root, útil para estimar a instalação do sistema.
 
 **Exemplos:**
+
 - Verificar reinstalações.
+
 - Investigar compromissos recentes.
+
 - Correlacionar com logs de boot inicial.
 
 ---
@@ -30,8 +32,11 @@ chattr
 🔹 `lsattr` exibe atributos como imutável (`+i`). `chattr` os altera.
 
 **Exemplos:**
+
 - `chattr +i arquivo.conf`
+
 - `lsattr /etc/*`
+
 - Proteger arquivos críticos contra alteração.
 
 ---
@@ -45,8 +50,11 @@ find . -type f -name "*.log" -exec grep "ERRO" {} \;
 🔹 Executa comandos em arquivos encontrados.
 
 **Exemplos:**
+
 - Buscar `.conf` e validar IPs.
+
 - Aplicar `shellcheck` em `.sh`.
+
 - Escanear arquivos suspeitos.
 
 ---
@@ -60,8 +68,11 @@ script sessao.log
 🔹 Grava a sessão atual do shell.
 
 **Exemplos:**
+
 - Auditorias de shell.
+
 - Provas em pentests.
+
 - Revisões posteriores de comandos executados.
 
 ---
@@ -76,8 +87,11 @@ whatis netstat
 🔹 `tldr` fornece exemplos. `whatis` resume a função.
 
 **Exemplos:**
+
 - Estudo rápido de comandos esquecidos.
+
 - Alternativa leve a manpages.
+
 - Ideal para ambientes restritos.
 
 ---
@@ -92,8 +106,11 @@ whereis sshd
 🔹 Localiza o caminho de comandos e binários.
 
 **Exemplos:**
+
 - Verificar presença de ferramentas.
+
 - Identificar sobreposições via alias.
+
 - Auditar instalação.
 
 ---
@@ -107,8 +124,11 @@ whereis sshd
 🔹 Reexecuta o último comando digitado.
 
 **Exemplos:**
+
 - `sudo !!` após esquecer o sudo.
+
 - Testar pequenas variações rapidamente.
+
 - Scripts dinâmicos de histórico.
 
 ---
@@ -123,8 +143,11 @@ whoami
 🔹 Mostram usuários conectados e o usuário atual.
 
 **Exemplos:**
+
 - Detectar sessões SSH.
+
 - Auditar terminais ativos.
+
 - Scripts de identificação.
 
 ---
@@ -139,8 +162,11 @@ tail -f arquivo.log
 🔹 `head` mostra o início, `tail` o final.
 
 **Exemplos:**
+
 - Monitorar logs.
+
 - Acompanhar alterações em tempo real.
+
 - Análise rápida sem abrir o arquivo completo.
 
 ---
@@ -155,8 +181,11 @@ wc -w arquivo
 🔹 Conta linhas, palavras ou caracteres.
 
 **Exemplos:**
+
 - Medir tamanho de logs.
+
 - Verificar comandos no `.bash_history`.
+
 - Analisar arquivos manipulados.
 
 ---
@@ -170,8 +199,11 @@ lsof
 🔹 Lista todos os arquivos abertos, inclusive sockets.
 
 **Exemplos:**
+
 - `lsof -i :80`
+
 - `lsof /etc/passwd`
+
 - `lsof -u root`
 
 ---
@@ -185,8 +217,11 @@ strace comando
 🔹 Exibe chamadas de sistema do processo.
 
 **Exemplos:**
+
 - `strace curl google.com`
+
 - `strace -e openat ls`
+
 - Análise reversa e debugging.
 
 ---
@@ -200,8 +235,11 @@ du -sh *
 🔹 Avalia consumo de espaço.
 
 **Exemplos:**
+
 - Identificar crescimento anormal.
+
 - Localizar diretórios pesados.
+
 - Gerenciar espaço em disco.
 
 ---
@@ -215,8 +253,11 @@ ss -tuln
 🔹 Exibe conexões TCP/UDP ativas.
 
 **Exemplos:**
+
 - Detectar bindshells.
+
 - Verificar serviços ativos.
+
 - `ss -tp` mostra PIDs.
 
 ---
@@ -231,8 +272,11 @@ printenv
 🔹 Lista variáveis exportadas.
 
 **Exemplos:**
+
 - Ver `LD_PRELOAD` ou tokens expostos.
+
 - Comparar ambientes.
+
 - Detecção de persistência via variável.
 
 ---
@@ -246,8 +290,11 @@ ps aux | grep -E '[zZ]'
 🔹 Identifica processos em estado de zumbi.
 
 **Exemplos:**
+
 - Pós-exploit.
+
 - Detectar falhas de execução.
+
 - Resposta a incidentes.
 
 ---
@@ -261,8 +308,11 @@ lsmod
 🔹 Mostra módulos carregados no kernel.
 
 **Exemplos:**
+
 - Buscar rootkits.
+
 - `modinfo <módulo>` para detalhes.
+
 - Auditar segurança do kernel.
 
 ---
@@ -276,8 +326,11 @@ sha256sum arquivo
 🔹 Garante integridade de arquivos.
 
 **Exemplos:**
+
 - Comparar binários.
+
 - Criar baseline.
+
 - Verificar alterações.
 
 ---
@@ -291,8 +344,11 @@ iftop
 🔹 Exibe tráfego de rede por IP.
 
 **Exemplos:**
+
 - Análise de conexões externas.
+
 - Monitoramento de banda.
+
 - Identificar comportamento anômalo.
 
 ---
@@ -306,8 +362,11 @@ last
 🔹 Mostra logins anteriores por IP e terminal.
 
 **Exemplos:**
+
 - Detectar acessos indevidos.
+
 - Analisar origem de conexões.
+
 - Correlacionar com incidentes.
 
 ---
