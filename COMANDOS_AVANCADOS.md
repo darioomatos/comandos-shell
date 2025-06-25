@@ -8,6 +8,7 @@
 
 ```bash
 stat -c %w /
+
 ```
 
 🔹 Mostra a data de criação do sistema de arquivos root, útil para estimar a instalação do sistema.
@@ -27,6 +28,7 @@ stat -c %w /
 ```bash
 lsattr
 chattr
+
 ```
 
 🔹 `lsattr` exibe atributos como imutável (`+i`). `chattr` os altera.
@@ -45,6 +47,7 @@ chattr
 
 ```bash
 find . -type f -name "*.log" -exec grep "ERRO" {} \;
+
 ```
 
 🔹 Executa comandos em arquivos encontrados.
@@ -63,6 +66,7 @@ find . -type f -name "*.log" -exec grep "ERRO" {} \;
 
 ```bash
 script sessao.log
+
 ```
 
 🔹 Grava a sessão atual do shell.
@@ -82,6 +86,7 @@ script sessao.log
 ```bash
 tldr netstat
 whatis netstat
+
 ```
 
 🔹 `tldr` fornece exemplos. `whatis` resume a função.
@@ -101,6 +106,7 @@ whatis netstat
 ```bash
 which nmap
 whereis sshd
+
 ```
 
 🔹 Localiza o caminho de comandos e binários.
@@ -119,6 +125,7 @@ whereis sshd
 
 ```bash
 !!
+
 ```
 
 🔹 Reexecuta o último comando digitado.
@@ -138,6 +145,7 @@ whereis sshd
 ```bash
 who
 whoami
+
 ```
 
 🔹 Mostram usuários conectados e o usuário atual.
@@ -157,6 +165,7 @@ whoami
 ```bash
 head -n 20 arquivo.log
 tail -f arquivo.log
+
 ```
 
 🔹 `head` mostra o início, `tail` o final.
@@ -176,6 +185,7 @@ tail -f arquivo.log
 ```bash
 wc -l arquivo
 wc -w arquivo
+
 ```
 
 🔹 Conta linhas, palavras ou caracteres.
@@ -194,6 +204,7 @@ wc -w arquivo
 
 ```bash
 lsof
+
 ```
 
 🔹 Lista todos os arquivos abertos, inclusive sockets.
@@ -212,6 +223,7 @@ lsof
 
 ```bash
 strace comando
+
 ```
 
 🔹 Exibe chamadas de sistema do processo.
@@ -230,6 +242,7 @@ strace comando
 
 ```bash
 du -sh *
+
 ```
 
 🔹 Avalia consumo de espaço.
@@ -248,6 +261,7 @@ du -sh *
 
 ```bash
 ss -tuln
+
 ```
 
 🔹 Exibe conexões TCP/UDP ativas.
@@ -267,6 +281,7 @@ ss -tuln
 ```bash
 env
 printenv
+
 ```
 
 🔹 Lista variáveis exportadas.
@@ -285,6 +300,7 @@ printenv
 
 ```bash
 ps aux | grep -E '[zZ]'
+
 ```
 
 🔹 Identifica processos em estado de zumbi.
@@ -303,6 +319,7 @@ ps aux | grep -E '[zZ]'
 
 ```bash
 lsmod
+
 ```
 
 🔹 Mostra módulos carregados no kernel.
@@ -321,6 +338,7 @@ lsmod
 
 ```bash
 sha256sum arquivo
+
 ```
 
 🔹 Garante integridade de arquivos.
@@ -339,6 +357,7 @@ sha256sum arquivo
 
 ```bash
 iftop
+
 ```
 
 🔹 Exibe tráfego de rede por IP.
@@ -357,6 +376,7 @@ iftop
 
 ```bash
 last
+
 ```
 
 🔹 Mostra logins anteriores por IP e terminal.
