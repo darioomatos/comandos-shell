@@ -3,10 +3,10 @@ name: Markdown Lint
 on:
   push:
     paths:
-      - '**.md'
+      - "**.md"
   pull_request:
     paths:
-      - '**.md'
+      - "**.md"
 
 jobs:
   lint:
@@ -19,6 +19,5 @@ jobs:
       - name: Run Markdown Linter
         uses: DavidAnson/markdownlint-cli2-action@v10
         with:
-          config: .markdownlint.json
           globs: |
             **/*.md
